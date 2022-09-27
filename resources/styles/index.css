@@ -12,3 +12,10 @@
   background-image: url('../images/bg-main-desktop.png');
   background-size: cover;
 }
+
+.card-front, .card-back {
+  box-sizing: border-box;
+  width: 447px;
+  height: 245px;
+  background-color: red;
+} 
