@@ -1,0 +1,36 @@
+#main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  #main {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+.gradient-background {
+  width: 483px;
+  min-height: 100%;
+  background-image: url('../images/bg-main-desktop.png');
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .gradient-background {
+    width: 100%;
+    min-height: 0;
+    height: 375px;
+    background-image: url('../images/bg-main-mobile.png');
+    background-size: cover;
+  }
+}
