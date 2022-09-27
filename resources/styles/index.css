@@ -1,4 +1,5 @@
 #main {
+  position: relative;
   box-sizing: border-box;
   max-width: 1440px;
   height: 100vh;
@@ -11,6 +12,15 @@
   min-height: 100%;
   background-image: url('../images/bg-main-desktop.png');
   background-size: cover;
+}
+
+.card {
+  position: absolute;
+  z-index: 2;
+
+  top: 187px;
+  left: 164px;
+  background-color: red;
 }
 
 .card-front, .card-back {
