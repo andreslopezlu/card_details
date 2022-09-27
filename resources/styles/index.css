@@ -9,5 +9,6 @@
 #main > .gradient-background {
   width: 483px;
   min-height: 100%;
-  background-color: red;
+  background-image: url('../images/bg-main-desktop.png');
+  background-size: cover;
 }
