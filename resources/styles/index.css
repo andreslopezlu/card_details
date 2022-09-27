@@ -1,0 +1,12 @@
+#main {
+  box-sizing: border-box;
+  max-width: 1440px;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+#main > .gradient-background {
+  width: 483px;
+  min-height: 100%;
+  background-color: red;
+}
