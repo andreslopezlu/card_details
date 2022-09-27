@@ -20,12 +20,17 @@
 
   top: 187px;
   left: 164px;
-  background-color: red;
 }
 
 .card-front, .card-back {
   box-sizing: border-box;
   width: 447px;
   height: 245px;
-  background-color: red;
+  border-radius: 10px;
+  background-color: blue;
 } 
+
+.card-back {
+  margin-top: 37px;
+  margin-left: 94px;
+}
