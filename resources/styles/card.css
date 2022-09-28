@@ -33,18 +33,19 @@
     border-radius: 6px;
   }
 
+  .card-back {
+    margin: 0;
+    z-index: 2;
+    margin-right: -57px;
+  }
+
   .card-front {
     margin: 0;
     z-index: 3;
     margin-top: 94px;
-    margin-right: 57px;
+    margin-left: -57px;
+    position: absolute;
   }
-
-  .card-back {
-    margin: 0;
-    z-index: 2;
-    margin-left: 57px;
-  } 
 }
 
 @media screen and (min-width: 1000px) {
