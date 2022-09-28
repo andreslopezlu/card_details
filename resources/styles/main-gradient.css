@@ -1,36 +1,37 @@
 #main {
-  display: flex;
-  flex-direction: row;
-  position: relative;
   box-sizing: border-box;
-  max-width: 1440px;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-@media (max-width: 1000px) {
-  #main {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  position: relative;
 }
 
 .gradient-background {
-  width: 483px;
-  min-height: 100%;
-  background-image: url('../images/bg-main-desktop.png');
   background-size: cover;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+
   .gradient-background {
     width: 100%;
-    min-height: 0;
-    height: 375px;
+    height: 240px;
     background-image: url('../images/bg-main-mobile.png');
-    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main {
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .gradient-background {
+    width: 483px;
+    min-height: 100%;
+    background-image: url('../images/bg-main-desktop.png');
   }
 }

@@ -1,0 +1,68 @@
+.card-front, .card-back {
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.card {
+  box-sizing: border-box;
+  position:absolute;
+  z-index: 2;
+}
+
+.card-front {
+  background-image: url('../images/bg-card-front.png');
+}
+
+.card-back {
+  background-image: url('../images/bg-card-back.png');
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    top: 32px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+  }
+
+  .card-front, .card-back {
+    width: 286px;
+    height: 157px;
+    border-radius: 6px;
+  }
+
+  .card-front {
+    margin: 0;
+    z-index: 3;
+    margin-top: 94px;
+    margin-right: 57px;
+  }
+
+  .card-back {
+    margin: 0;
+    z-index: 2;
+    margin-left: 57px;
+  } 
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    top: 187px;
+    left: 164px;
+    border: 1px solid red;
+  }
+
+  .card-front, .card-back {
+    width: 447px;
+    height: 245px;
+    border-radius: 10px;
+  }
+
+  .card-back {
+    margin-top: 37px;
+    margin-left: 94px;
+  }
+}
