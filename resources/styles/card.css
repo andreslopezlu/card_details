@@ -25,7 +25,6 @@
 
     display: flex;
     justify-content: center;
-    border: 1px solid red;
   }
 
   .card-front, .card-back {
@@ -51,18 +50,29 @@
 @media screen and (min-width: 1000px) {
   .card {
     top: 187px;
+    left: 90px;
+  }
+
+  .card-front, .card-back {
+    width: 286px;
+    height: 157px;
+    border-radius: 6px;
+  }
+
+  .card-back {
+    margin-top: 37px;
+    margin-left: 94px;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .card {
     left: 164px;
-    border: 1px solid red;
   }
 
   .card-front, .card-back {
     width: 447px;
     height: 245px;
     border-radius: 10px;
-  }
-
-  .card-back {
-    margin-top: 37px;
-    margin-left: 94px;
   }
 }
