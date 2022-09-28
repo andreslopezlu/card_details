@@ -60,8 +60,8 @@
   }
 
   .card-back {
-    margin-top: 37px;
-    margin-left: 94px;
+    margin-top: 25px;
+    margin-left: 70px;
   }
 }
 
@@ -74,5 +74,10 @@
     width: 447px;
     height: 245px;
     border-radius: 10px;
+  }
+
+  .card-back {
+    margin-top: 37px;
+    margin-left: 94px;
   }
 }
