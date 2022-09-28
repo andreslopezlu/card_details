@@ -30,8 +30,14 @@
   }
 
   .gradient-background {
-    width: 483px;
+    width: 335px;
     min-height: 100%;
     background-image: url('../images/bg-main-desktop.png');
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .gradient-background {
+    width: 483px;
   }
 }
