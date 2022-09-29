@@ -41,6 +41,12 @@
   background-image: url('../images/bg-card-back.png');
 }
 
+.card-back > span {
+  color: white;
+  display: block;
+  line-height: 1.28;
+}
+
 @media screen and (max-width: 1000px) {
   .card {
     top: 32px;
@@ -61,6 +67,8 @@
     margin: 0;
     z-index: 2;
     margin-right: -57px;
+    padding-top: 72px;
+    padding-left: 229px;
   }
 
   .card-front {
@@ -87,6 +95,11 @@
     height: 30px;
   }
 
+  .card-back > span {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -104,6 +117,8 @@
   .card-back {
     margin-top: 25px;
     margin-left: 70px;
+    padding-top: 72px;
+    padding-left: 229px;
   }
 
   .card-front{
@@ -125,6 +140,11 @@
     height: 30px;
   }
 
+  .card-back > span {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+
 }
 
 @media screen and (min-width: 1300px){
@@ -141,6 +161,8 @@
   .card-back {
     margin-top: 37px;
     margin-left: 94px;
+    padding-top: 113px;
+    padding-left: 358px;
   }
 
   .card-front{
@@ -162,4 +184,8 @@
     height: 47px;
   }
 
+  .card-back > span {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 }
