@@ -11,6 +11,9 @@
 
 .card-front {
   background-image: url('../images/bg-card-front.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-back {
