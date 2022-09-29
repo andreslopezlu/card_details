@@ -21,10 +21,15 @@
   justify-content: space-between;
 }
 
+.card-front-info-number{
+  line-height: 1.28;
+  color: white;
+  display: block;
+}
+
 .card-back {
   background-image: url('../images/bg-card-back.png');
 }
-
 
 @media screen and (max-width: 1000px) {
   .card {
@@ -56,6 +61,12 @@
     position: absolute;
     padding: 18px 19px 19px;
   }
+
+  .card-front-info-number{
+    font-size: 18px;
+    margin: 0 0 17px;
+    letter-spacing: 2.2px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -78,6 +89,12 @@
   .card-front{
     padding: 18px 19px 19px;
   }
+
+  .card-front-info-number{
+    font-size: 18px;
+    margin: 0 0 17px;
+    letter-spacing: 2.2px;
+  }
 }
 
 @media screen and (min-width: 1300px){
@@ -98,5 +115,11 @@
 
   .card-front{
     padding: 28px 32px 26px;
+  }
+
+  .card-front-info-number{
+    font-size: 28px;
+    margin: 0 0 25px;
+    letter-spacing: 3.42px;
   }
 }
