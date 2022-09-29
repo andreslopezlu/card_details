@@ -16,6 +16,10 @@
   justify-content: space-between;
 }
 
+.card-front-logo > img {
+  max-height: 100%;
+}
+
 .card-front-info-holder {
   display: flex;
   justify-content: space-between;
@@ -79,6 +83,10 @@
     letter-spacing: 1.29px;
   }
 
+  .card-front-logo {
+    height: 30px;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -113,6 +121,10 @@
     letter-spacing: 1.29px;
   }
 
+  .card-front-logo {
+    height: 30px;
+  }
+
 }
 
 @media screen and (min-width: 1300px){
@@ -145,4 +157,9 @@
     font-size: 14px;
     letter-spacing: 2px;
   }
+
+  .card-front-logo {
+    height: 47px;
+  }
+
 }
