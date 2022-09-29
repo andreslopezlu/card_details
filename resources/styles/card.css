@@ -27,6 +27,12 @@
   display: block;
 }
 
+.card-front-info-holder > span {
+  line-height: 1.28;
+  color: white;
+  display: block;
+}
+
 .card-back {
   background-image: url('../images/bg-card-back.png');
 }
@@ -67,6 +73,12 @@
     margin: 0 0 17px;
     letter-spacing: 2.2px;
   }
+
+  .card-front-info-holder > span{
+    font-size: 9px;
+    letter-spacing: 1.29px;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -95,6 +107,12 @@
     margin: 0 0 17px;
     letter-spacing: 2.2px;
   }
+
+  .card-front-info-holder > span{
+    font-size: 9px;
+    letter-spacing: 1.29px;
+  }
+
 }
 
 @media screen and (min-width: 1300px){
@@ -121,5 +139,10 @@
     font-size: 28px;
     margin: 0 0 25px;
     letter-spacing: 3.42px;
+  }
+
+  .card-front-info-holder > span{
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 }
