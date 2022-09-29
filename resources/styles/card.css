@@ -16,9 +16,15 @@
   justify-content: space-between;
 }
 
+.card-front-info-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card-back {
   background-image: url('../images/bg-card-back.png');
 }
+
 
 @media screen and (max-width: 1000px) {
   .card {
