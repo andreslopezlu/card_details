@@ -45,6 +45,7 @@
     margin-top: 94px;
     margin-left: -57px;
     position: absolute;
+    padding: 18px 19px 19px;
   }
 }
 
@@ -64,6 +65,10 @@
     margin-top: 25px;
     margin-left: 70px;
   }
+
+  .card-front{
+    padding: 18px 19px 19px;
+  }
 }
 
 @media screen and (min-width: 1300px){
@@ -80,5 +85,9 @@
   .card-back {
     margin-top: 37px;
     margin-left: 94px;
+  }
+
+  .card-front{
+    padding: 28px 32px 26px;
   }
 }
