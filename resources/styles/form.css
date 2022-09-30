@@ -1,0 +1,31 @@
+.form {
+  border: 1px solid red;
+  box-sizing: border-box;
+  max-width: 381px;
+  max-height: 352px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+input, label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+input {
+  border: 1px solid lightgray;
+  height: 45px;
+  padding: 11px 16px;
+  border-radius: 8px;
+}
+
+#expiringDateMonth, #expiringDateYear {
+  width: 80px;
+}
+
+#cvc {
+  width: 191px;
+}
