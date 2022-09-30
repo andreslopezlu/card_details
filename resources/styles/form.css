@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   border: 1px solid green;
+
+  --width-date-inputs: 80px;
+  --width-cvc-input: 191px;
+  --extra-gap-for-column: 10px;
+  --columns-gap: 10px;
 }
 
 form {
@@ -37,19 +42,15 @@ input {
 }
 
 #expiringDateMonth, #expiringDateYear {
-  --width-date-inputs: 80px;
   width: var(--width-date-inputs);
 }
 
 #cvc {
-  --width-cvc-input: 191px;
-  --extra-gap-for-column: 10px;
   width: var(--width-cvc-input);
   margin-left: var(--extra-gap-for-column);
 }
 
 .form-row-grid {
-  --columns-gap: 10px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
