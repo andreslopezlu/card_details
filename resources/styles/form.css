@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid green;
 
   --width-date-inputs: 80px;
   --width-cvc-input: 191px;
@@ -10,6 +9,7 @@
   --columns-gap: 10px;
   --submit-button-height: 53px;
   --submit-button-border-radius: 8px;
+  --input-button-margin: 26px;
 }
 
 form {
@@ -38,7 +38,7 @@ input {
   height: 45px;
   padding: 11px 16px;
   border-radius: 8px;
-  margin: 9px 0 26px;
+  margin: 9px 0 var(--input-button-margin);
 
   color: lightgray;
   font-size: 18px;
@@ -87,4 +87,30 @@ input {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.28;
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    --width-date-inputs: 72px;
+    --width-cvc-input: 164px;
+    --columns-gap: 8px;
+    --extra-gap-for-column: 3px;
+    --input-button-margin: 20px;
+  }
+
+  form {
+    margin: 91px auto 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    margin-left: 280px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  form {
+    margin-left: 480px;
+  }
 }
