@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="resources/styles/reset.css">
+  <link rel="stylesheet" href="resources/styles/global.css">
   <link rel="stylesheet" href="resources/styles/main-gradient.css">
   <link rel="stylesheet" href="resources/styles/card.css">
   <title>Card details</title>
@@ -16,8 +19,21 @@
   <div id="main">
     <div class="gradient-background"></div>
     <div class="card">
-      <div class="card-front"></div>
-      <div class="card-back"></div>
+      <div class="card-front">
+        <div class="card-front-logo">
+          <img src="./resources/images/card-logo.svg" alt="logo">
+        </div>
+        <div class="card-front-info">
+          <span class="space-grotesk card-front-info-number">0000 0000 0000 0000</span>
+          <div class="card-front-info-holder">
+            <span class="space-grotesk">JANE APPLESEED</span>
+            <span class="space-grotesk">00/00</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-back">
+        <span class="space-gotesk">000</span>
+      </div>
     </div>
     <div class="form"></div>
   </div>
