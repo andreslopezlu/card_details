@@ -13,8 +13,6 @@
 }
 
 form {
-  border: 1px solid red;
-  box-sizing: border-box;
   max-width: 381px;
   max-height: 352px;
   margin-left: 480px;
@@ -41,6 +39,11 @@ input {
   padding: 11px 16px;
   border-radius: 8px;
   margin: 9px 0 26px;
+
+  color: lightgray;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.28;
 }
 
 #expiringDateMonth, #expiringDateYear {
