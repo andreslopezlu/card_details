@@ -8,6 +8,8 @@
   --width-cvc-input: 191px;
   --extra-gap-for-column: 10px;
   --columns-gap: 10px;
+  --submit-button-height: 53px;
+  --submit-button-border-radius: 8px;
 }
 
 form {
@@ -69,4 +71,17 @@ input {
 .cvc-label {
   grid-column: 3;
   grid-row: 1;
+}
+
+.button-submit {
+  box-sizing: border-box;
+  margin: 14px 0 0;
+  height: var(--submit-button-height);
+  border-radius: var(--submit-button-border-radius);
+  background-color: #21092F;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.28;
 }
