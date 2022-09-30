@@ -45,8 +45,8 @@ input {
   width: var(--width-date-inputs);
 }
 
-#cvc {
-  width: var(--width-cvc-input);
+#cvc, .cvc-label {
+  width: calc(var(--width-cvc-input) - var(--extra-gap-for-column));
   margin-left: var(--extra-gap-for-column);
 }
 
@@ -69,5 +69,4 @@ input {
 .cvc-label {
   grid-column: 3;
   grid-row: 1;
-  margin-left: var(--extra-gap-for-column);
 }
