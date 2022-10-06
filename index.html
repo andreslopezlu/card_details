@@ -25,7 +25,7 @@
           <img src="./resources/images/card-logo.svg" alt="logo">
         </div>
         <div class="card-front-info">
-          <span class="space-grotesk card-front-info-number">0000 0000 0000 0000</span>
+          <span class="space-grotesk card-front-info-number" id="image-card-number-data">0000 0000 0000 0000</span>
           <div class="card-front-info-holder">
             <span class="space-grotesk" id="image-card-holder-data">JANE APPLESEED</span>
             <span class="space-grotesk">00/00</span>
@@ -48,7 +48,7 @@
           CARD NUMBER
         </label>
         <br>
-        <input class="space-grotesk" type="number" name="" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+        <input oninput="bindingCardNumberDataData(this.value)" class="space-grotesk" type="number" name="" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
         <br>
         <div class="form-row-grid">
           <label class="space-grotesk exp-date-label" for="expiringDate">
