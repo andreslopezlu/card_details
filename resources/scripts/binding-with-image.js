@@ -11,6 +11,9 @@ const bindingCardHolderDataData = (value) => {
 const bindingCardNumberDataData = (value) => {
   if(value == '') return imageCardNumberData.innerHTML = CARDNUMBER_DEFAULT;
 
-  maskedValue = value.match(/.{1,4}/g).join(' ');
+  maskedValue = maskValue( completeCardNumber(value) );
   imageCardNumberData.innerHTML = maskedValue;
 }
+
+const completeCardNumber = (value) => ( value + Array(16 - value.length).fill(0).join('') );
+const maskValue = (value) => ( value.match(/.{1,4}/g).join(' ') );
