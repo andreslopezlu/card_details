@@ -27,7 +27,7 @@
         <div class="card-front-info">
           <span class="space-grotesk card-front-info-number">0000 0000 0000 0000</span>
           <div class="card-front-info-holder">
-            <span class="space-grotesk">JANE APPLESEED</span>
+            <span class="space-grotesk" id="image-card-holder-data">JANE APPLESEED</span>
             <span class="space-grotesk">00/00</span>
           </div>
         </div>
@@ -42,7 +42,7 @@
           CARDHOLDER NAME
         </label>
         <br>
-        <input class="space-grotesk" type="text" name="" id="cardholderName" placeholder="e.g. Jane Appleseed">
+        <input oninput="bindingCardHolderDataData(this.value)" class="space-grotesk" type="text" name="" id="cardholderName" placeholder="e.g. Jane Appleseed">
         <br>
         <label class="space-grotesk" for="cardNumber">
           CARD NUMBER
