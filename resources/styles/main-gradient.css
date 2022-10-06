@@ -1,6 +1,7 @@
 #main {
   box-sizing: border-box;
   position: relative;
+  display: flex;
 }
 
 .gradient-background {
@@ -9,7 +10,6 @@
 
 @media screen and (max-width: 1000px) {
   #main {
-    display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;

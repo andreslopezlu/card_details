@@ -1,0 +1,116 @@
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  --width-date-inputs: 80px;
+  --width-cvc-input: 191px;
+  --extra-gap-for-column: 10px;
+  --columns-gap: 10px;
+  --submit-button-height: 53px;
+  --submit-button-border-radius: 8px;
+  --input-button-margin: 26px;
+}
+
+form {
+  max-width: 381px;
+  max-height: 352px;
+  margin-left: 480px;
+}
+
+input, label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+label {
+  color: #21092F;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 2px;
+}
+
+input {
+  border: 1px solid lightgray;
+  height: 45px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  margin: 9px 0 var(--input-button-margin);
+
+  color: lightgray;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+#expiringDateMonth, #expiringDateYear {
+  width: var(--width-date-inputs);
+}
+
+#cvc, .cvc-label {
+  width: calc(var(--width-cvc-input) - var(--extra-gap-for-column));
+  margin-left: var(--extra-gap-for-column);
+}
+
+.form-row-grid {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: var(--width-date-inputs) var(--width-date-inputs) var(--width-cvc-input);
+  grid-template-rows: auto 1fr;
+  column-gap: var(--columns-gap);
+}
+
+.exp-date-label {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+}
+
+.cvc-label {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.button-submit {
+  box-sizing: border-box;
+  margin: 14px 0 0;
+  height: var(--submit-button-height);
+  border-radius: var(--submit-button-border-radius);
+  background-color: #21092F;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    --width-date-inputs: 72px;
+    --width-cvc-input: 164px;
+    --columns-gap: 8px;
+    --extra-gap-for-column: 3px;
+    --input-button-margin: 20px;
+  }
+
+  form {
+    margin: 91px auto 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    margin-left: 280px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  form {
+    margin-left: 480px;
+  }
+}
